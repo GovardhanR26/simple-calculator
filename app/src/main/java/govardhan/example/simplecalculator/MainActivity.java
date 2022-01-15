@@ -174,7 +174,6 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     Object result = engine.eval(mathOperation);
                     answerTxt.setText(result.toString());
-                    Log.d("Calculator", "Operation: " + mathOperation + " result: " + result);
                 } catch (ScriptException e) {
                     Log.d("Calculator", " ScriptEngine error: " + e.getMessage());
                 }
